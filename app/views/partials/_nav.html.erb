@@ -1,0 +1,29 @@
+<nav class="navbar">
+	<container class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#nav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="" class="navbar-brand">PhotoUploader</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="nav">
+			<ul class="nav navbar-nav">
+				<li><%= link_to 'Home', welcome_Home_path %></li>		
+				<li><%= link_to 'About Us', welcome_About_path %></li>
+				<li><%= link_to 'Contact Us', welcome_Contact_path %></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			 <% if current_user %>
+			 	<li><%= link_to 'Photo Uploader', posts_path %> </li>
+			    <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %> </li>			 
+			 <% else %>
+				<li><%= link_to 'Sign In', new_user_session_path %></li>
+				<li><%= link_to 'Register', new_user_registration_path %></li>
+			 <% end %>
+			</ul>
+		</div>
+	</container>
+</nav>
