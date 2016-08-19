@@ -1,2 +1,98 @@
-<h1>Welcome#Home</h1>
-<p>Find me in app/views/welcome/Home.html.erb</p>
+<head>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font: 400 15px/1.8 "Lato", sans-serif;
+      color: #777;
+    }
+    
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      position: relative;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+    }
+    .bgimg-1 {
+      background-image: url("https://images.unsplash.com/uploads/141219200475673afcb68/f5bd8360?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4730930ba1fb54eef0d7dc616bb54f36");
+      min-height: 100%;
+    }
+    
+    .bgimg-2 {
+      background-image: url("https://hd.unsplash.com/photo-1444658293155-105ae40f8278");
+      min-height: 400px;
+    }
+    
+    .bgimg-3 {
+      background-image: url("https://hd.unsplash.com/photo-1452390211826-8d50e8ee0b62");
+      min-height: 400px;
+    }
+    
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+    
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    }
+    
+    h3 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font: 20px "Lato", sans-serif;
+      color: #111;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bgimg-1">
+    <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: black;">SCROLL DOWN</span>
+    </div>
+  </div>
+
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">PhotoUploader Info</h3>
+    <p><center>PhotoUploader is a simple photo uploading website.  You can join for free and upload your favorite photos to be saved securely. Just register for free and all your information will be kept completely private.</center></p>
+  </div>
+
+  <div class="bgimg-2">
+  </div>
+
+  <div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <p>Join now it's free for.  &nbsp; No financial info is required.  Click <%= link_to 'Here', new_user_registration_path %></a></p>
+    </div>
+  </div>
+
+  <div class="bgimg-3">
+  </div>
+
+  <div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <p>If you have photos to lose, then please join, and you will not lose them.  Click <%= link_to 'Here', new_user_registration_path %></p>
+    </div>
+  </div>
+
+  <div class="bgimg-1">
+    <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: black;">ALRIGHT! LET'S DO THIS!</span>
+    </div>
+  </div>
+
+</body>
+
+</html>
+

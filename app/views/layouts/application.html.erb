@@ -7,13 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container">
-	<%= render 'partials/nav' %>
-</div>
-<div class="container">
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<%= render 'partials/nav' %>
+
 <%= yield %>
-</div>
+
+<footer>
+	<p><center>Copyright &copy; - 2016 PhotoUploader</center></p>
+</footer>
 </body>
 </html>
